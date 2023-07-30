@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Netflix clone</title>
+  <link rel="stylesheet" href="index.css">
+  <script src="index.js" defer></script>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="stylelogout.css" />
+
+</head>
+<body>
+    <!-- header start -->
+    <header id="header" class="">
+        <div class="header-cont container">
+            <div class="left-cont">
+                <img class="header-brand" src="https://images.ctfassets.net/4cd45et68cgf/7LrExJ6PAj6MSIPkDyCO86/542b1dfabbf3959908f69be546879952/Netflix-Brand-Logo.png?w=684&h=456" alt="">
+                <ul class="main-nav">
+                    <li class="nav-item active">Home</li>
+                    <li class="nav-item">Tv Shows</li>
+                    <li class="nav-item">Movies</li>
+                    <li class="nav-item">News & Popular</li>
+                    <li class="nav-item">My List</li>
+                    <li class="nav-item">Browse by Languages</li>
+                </ul>
+            </div>
+            <div class="right-cont">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="Hawkins-Icon Hawkins-Icon-Standard"><path fill-rule="evenodd" clip-rule="evenodd" d="M13 4.57092C16.3922 5.05624 18.9998 7.9736 18.9998 11.5V15.2538C20.0486 15.3307 21.0848 15.4245 22.107 15.5347L21.8926 17.5232C18.7219 17.1813 15.409 17 11.9998 17C8.59056 17 5.27764 17.1813 2.10699 17.5232L1.89258 15.5347C2.91473 15.4245 3.95095 15.3307 4.99978 15.2538V11.5C4.99978 7.97345 7.6076 5.05599 11 4.57086V2H13V4.57092ZM8.62568 19.3712C8.6621 20.5173 10.1509 22 11.9993 22C13.8477 22 15.3365 20.5173 15.373 19.3712C15.38 19.1489 15.1756 19 14.9531 19H9.04555C8.82308 19 8.61862 19.1489 8.62568 19.3712Z" fill="currentColor"></path></svg>
+                <img src="data:image/jpeg;base64,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" alt="">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVaaAm2Fw0-QJkIuxpisv9LAmmD9XV-Jynpg&usqp=CAU" alt=""> 
+                <button class="logout-btn">Logout</button>
+                <script src="app.js"></script>
+            </div>
+        </div>
+    </header>
+    <!-- header end -->
+
+    <!-- banner section -->
+    <div class="banner-section" id="banner-section">
+        <div class="banner_fadeBottom"></div>
+    </div>
+    <!-- banner section end -->
+
+    <!-- movies sections -->
+    <div class="movies-cont container" id="movies-cont">
+    </div>
+    <!-- movies sections end -->
+    
+     
+    <script src="app.js"></script>
+    <script src="logout.js"></script>    
+
+       
+         
+      </div>
+      <script>
+        const btn = document.querySelector("button");
+        const post = document.querySelector(".post");
+        const widget = document.querySelector(".star-widget");
+        const editBtn = document.querySelector(".edit");
+        btn.onclick = ()=>{
+          
+          post.style.display = "block";
+          editBtn.onclick = ()=>{
+            
+            post.style.display = "none";
+          }
+          return false;
+        }
+      </script>
+
+ 
+
+  
+</body>
+</html>
